@@ -1,4 +1,7 @@
 import HomePage from './home-page';
+import AboutPage from './about-page';
+import MenuPage from './menu-page';
+
 import Wood from './assets/Wood.jpg'
 
 const PageLoad = () => {
@@ -17,7 +20,17 @@ const PageLoad = () => {
             e.target.classList.remove('inactive');
             e.target.classList.add('active');
 
-            // Switch page content
+            if (e.target.id == "home-page") {
+                HomePage();
+            }
+
+            if (e.target.id == "menu-page") {
+                MenuPage();
+            }
+
+            if (e.target.id == "about-page") {
+                AboutPage();
+            }
         })
     });
 
