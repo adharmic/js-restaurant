@@ -1,9 +1,11 @@
 html,
 body {
     height: 100%;
+    font-family: "Rowdies", sans-serif;
 }
 
 body {
+    background-image: url('./assets/Wood.jpg');
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,14 +22,13 @@ header {
 }
 
 .nav-wrapper {
-    width: 75%;
-    background-color: cadetblue;
+    width: 80%;
 }
 
 nav {
     height: 6vh;
     margin-left: 20px;
-    width: 75%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
@@ -36,28 +37,55 @@ nav {
 }
 
 #content {
-    width: 75%;
+    border-radius: 15px 15px 0 0;
+    padding-top: 20px;
+    width: 80%;
     height: 100%;
-    background-color:linen;
+    background-color:#c8ad7d;
 }
 
 nav button {
+    font-family: "Rowdies", sans-serif;
     width: 95%;
     height: 5vh;
-    background-color: linen;
+    background-color: #c8ad7d;
     border: none;
-    border-radius: 5px 5px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
 .active {
-    background-color: linen;
+    background-color: #c8ad7d;
 }
 
 .inactive {
-    background-color: rosybrown;
+    background-color: #b77043;
 }
 
 .inactive:hover {
     cursor: pointer;
-    background-color: rgb(145, 113, 113);
+    background-color: #8a5331;
+}
+
+.card {
+    padding: 10px;
+    width: 90%;
+    background-color: #f7f1e4;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 0 10px 10px 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
