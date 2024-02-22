@@ -8,12 +8,14 @@ body {
     background-image: url('./assets/Wood.jpg');
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    /* flex-direction: column;
+    justify-content: center; */
+    justify-items: center;
 }
 header {
+    margin-top: 2vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -47,10 +49,13 @@ nav {
 nav button {
     font-family: "Rowdies", sans-serif;
     width: 95%;
-    height: 5vh;
+    height: 6vh;
     background-color: #c8ad7d;
     border: none;
     border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .active {
