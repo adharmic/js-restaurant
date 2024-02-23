@@ -5,17 +5,18 @@ body {
 }
 
 body {
+    overflow-y: scroll;
     background-image: url('./assets/Wood.jpg');
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 7vh 1fr;
     /* flex-direction: column;
     justify-content: center; */
     justify-items: center;
 }
 header {
-    margin-top: 2vh;
+    margin-top: 4vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,13 +25,13 @@ header {
 }
 
 .nav-wrapper {
-    width: 80%;
+    width: 85%;
 }
 
 nav {
     height: 6vh;
     margin-left: 20px;
-    width: 80%;
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
@@ -41,8 +42,7 @@ nav {
 #content {
     border-radius: 15px 15px 0 0;
     padding-top: 20px;
-    width: 80%;
-    height: 100%;
+    width: 85%;
     background-color:#c8ad7d;
     z-index: 2;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -63,6 +63,7 @@ nav button {
 
 .active {
     background-color: #c8ad7d;
+    border-bottom: 1px solid #c8ad7d;
     z-index: 3;
 }
 
@@ -77,6 +78,9 @@ nav button {
 }
 
 .card {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
     padding: 20px;
     width: 90%;
     background-color: #f7f1e4;
@@ -106,5 +110,14 @@ img {
 .card-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#hours-table {
+    margin: 20px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
 }
