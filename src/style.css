@@ -49,6 +49,7 @@ nav {
 }
 
 nav button {
+    color: black;
     font-family: "Rowdies", sans-serif;
     font-size: large;
     width: 95%;
