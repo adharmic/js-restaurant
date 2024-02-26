@@ -3,8 +3,15 @@ import AboutPage from './about-page';
 import MenuPage from './menu-page';
 
 import Wood from './assets/Wood.jpg'
+import Fav from './assets/favicon.png';
 
 const PageLoad = () => {
+    var link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+
+    link.href = Fav;
+
     const bgWood = new Image();
     bgWood.src = Wood;
 
