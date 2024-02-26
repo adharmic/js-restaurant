@@ -94,11 +94,7 @@ nav button {
     justify-content: center;
 }
 
-h3 {
-    margin: 0;
-}
-
-h1 {
+h1, h2, h3 {
     margin: 0;
 }
 
@@ -120,4 +116,31 @@ img {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
+}
+
+.menu-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.menu-desc {
+    padding-left: 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: end;
+    text-align: end;
+}
+
+@media (max-width: 800px) {
+    .menu-card {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-desc {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
